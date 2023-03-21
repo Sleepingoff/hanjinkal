@@ -1,0 +1,148 @@
+웹문서 = html문서 +css문서+javascript문서
+html? 언어
+hyper
+text
+markup
+language
+(마크업언어:컨텐츠의 의미,역활을 표시한다)
+- <>로 표시 </>
+h1 : 제목
+p:  문단,설명
+
+html문서는 html언어로 쓰여진 문서,html언어로 컨텐츠의 의미역활을 표시한 문서 
+
+
+/2회차
+link : css파일을 html문서에 연결하는 태그
+a태그 : 문서를 연결하는 역활 anchor  닷
+css설명
+
+브라우저기본스타일
+
+/3회차
+- li:list 목록
+- ul : li묶음 unordered list
+- 젠코딩
+- div : division 분할,영역
+    상단전용div -> header
+    메뉴네비게이션 전용 div -> nav
+
+- 태그는 블럭태그와 인라인태그로 나뉜다
+  블럭태그는 너비는 화면에 꽉찬다,높이는 내용물만큼 늘어난다    
+  블럭태그는 수직으로 쌓인다
+  header,div,h1~h6,ul,li,p
+
+- 인라인(inline)태그는 너비가 컨텐츠만큼만 커진다
+  수평으로 배치된다.
+  너비높이를 줘도 적용이 안된다
+  패딩이 제대로 적용이 안된다
+  a
+
+- 브라우저기본스타일을 초기화하기
+
+- 태그에 이름지정하여 특정이름을 가진태그에만 스타일 지정하기
+  <태그 class="영어이름">  - html문서에서 태그에 이름지정
+  .영어이름 - css문서에 이름지정한후 스타일 지정하기
+
+  예) <ul class="etcmenu">
+      .etcmenu{
+        
+      }
+
+/4회차
+position:absolute설명
+margin설명
+?하위선택자
+?class추가설명
+?gnb : global navigation bar
+?class설명필요
+main태그
+footer태그
+padding : 안쪽여백,면적이 커진다,다른요소와 붙어있는 상태이다
+:hover 마우스를 올린상태
+
+/ display:block; 인라인태그를 블럭태그로 전환
+
+/ id 태그이름지정 현재문서에서 한번만 사용가능
+ <div id="title"> :html에서
+ #title : css문서에서
+ 
+ /br 줄바꿈태그
+
+/ span태그 인라인요소를 묶어주는 태그(의미는 없음)
+
+/ 마크업과 css정리
+
+1 마크업
+  header 상단영역태그
+  h1 제목태그
+  a 링크태그
+  p 문단,설명
+  nav 메뉴묶음
+  ul li묶음
+  li 목록
+  br 줄바꿈
+  span 인라인요소 묶음
+  div 영역
+  main 메인영역
+  footer 하단영역
+--12
+2 css  
+  width 너비지정
+  height 높이
+  margin:0 auto 수평중앙정렬(블럭태그에게만)
+  padding 안쪽여백
+  display:flex  수평정렬
+  justify-content 수평정렬옵션
+  flex-direction 수직정렬
+  align-items 수직정렬옵션
+  font-size 글자크기
+  font-weight 글자두께
+  color 글자색
+  background-color 배경색
+  position:absolute 위치지정
+  top,bottom,left,right 위치지정속성
+  position:relative 기준점
+  border 테두리선
+  line-height 글높이,줄간격
+  text-align 텍스트정렬(인라인태그중앙정렬 text-align:center)
+  text-decoration: none 밑줄없애기
+  list-style: none 점표시 없애기
+  background-image
+  background-repeat
+  background-size
+  background-position
+  background-attachment
+  calc
+  font-family 웹폰트(구글폰트)
+--25  
+
+5회차 --------------------------------------------------
+/ 배경이미지 지정하기
+  background-image:url()
+  배경옵션들
+ 
+/ 상대경로
+? calc() 
+? 웹폰트 
+
+6회차----------------------------------------
+/ 가상선택자 /* 가상선택자 ::before,::after
+
+/ 특수문자
+
+/ :first-child 첫번째자식 */
+
+/ 선택자 분류와 설명		https://www.nextree.co.kr/p8468/
+
+/ vertical-align: 2px; /* vertical-align 글자수직정렬 */
+
+/ 온라인편집기
+
+/ 하위선택자와 자식선택자 비교설명
+  div h2 a{ div아래있는 모든 a
+
+  }
+  div>a{ div 바로아래 있는 a
+
+  }
