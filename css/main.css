@@ -153,8 +153,8 @@ div#title::after {
   border-left-color: transparent;
   border-top-color: transparent;
   position: absolute;
-  left: -10;
-  top: 0;
+  right: 0;
+  bottom: 0;
 }
 div#title a::after{
   content: "";
@@ -175,8 +175,43 @@ div#title a::after{
 /* 메인영역 */
 main{
   height: 1000px;
+  color: #111;
 }
-
-
+main section#intro {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+main section#intro div {
+  width: 1100px;
+  margin: 0 auto;
+  
+}
+main section#intro div h2 {
+/*   화면에서 지우기 */
+  display: none;
+}
+main section#intro div ul {
+  justify-content: space-between;
+}
+main section#intro div ul li {
+  width: calc(100% / 4 - 60px / 3);
+  height: 260px;
+  background: #ccc;
+}
+main section#intro div ul li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+main section#intro div ul li a h3 {
+  color: #111;
+}
+main section#intro div ul li a p {
+  color: #111;
+}
 
 
