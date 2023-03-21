@@ -14,9 +14,7 @@ header{
   left: calc(50% - 550px);
   z-index: 2;
 }
-header h1{
- 
-}
+
 header h1 a{
   background-image: url(../img/hj_logo.jpg);
   width: 230px;
@@ -34,9 +32,7 @@ ul.gnb{
   
   border-top: 1px solid gray;
 }
-ul.gnb li{ /*클래스명이gnb인ul 아래에 위치한(있는) li*/
-          /* 경기도 인천시 부평구 */    
-}
+
 ul.gnb li a{
   padding: 10px 30px;
   display: block;
@@ -50,9 +46,7 @@ ul.etcmenu{
   top: 8px;
   right: 0px;
 }
-ul.etcmenu li{
-  
-}
+
 
 ul.etcmenu li a{
   padding: 5px 12px;
@@ -67,9 +61,7 @@ ul.etcmenu li:first-child a::after{ /* 가상선택자 ::before,::after / :first
   font-size: 7px;
   vertical-align: 2px; /* vertical-align 글자수직정렬 */
 }
-li{
-  
-}
+
 /* 타이틀영역 */
 div#title{
   height: 600px;
@@ -106,9 +98,7 @@ div#title h2{
 div#title h2 span{
   font-weight: 500;
 }
-div#title span{
-  
-}
+
 div#title h2::after{
   content: "";
   width: 2px;
@@ -186,9 +176,7 @@ div#title a::after{
 main{
   height: 1000px;
 }
-main section{
-  
-}
+
 
 
 
