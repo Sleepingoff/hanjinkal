@@ -196,7 +196,6 @@ main section#intro div ul {
 main section#intro div ul li {
   width: calc(100% / 4 - 60px / 3);
   height: 260px;
-  background: #ccc;
 }
 main section#intro div ul li a {
   display: flex;
@@ -207,11 +206,76 @@ main section#intro div ul li a {
   width: 100%;
   text-align: center;
 }
+main section#intro div ul li a::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100px;
+  background-image: url("../img/stream.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+main section#intro div ul li:nth-of-type(2) a::before{
+  background-image: url("../img/cloud.svg");
+}
+main section#intro div ul li:nth-of-type(3) a::before{
+  background-image: url("../img/settings.svg");
+}
+main section#intro div ul li:nth-of-type(4) a::before{
+  background-image: url("../img/podcasts.svg");
+}
+main section#intro div ul li:nth-child(1) a{
+/*   background: radial-gradient(circle, white, #8ea3b3); */
+/*start ------------*/
+  background: -webkit-gradient(radial, center, center, color-stop(0, #909eb800), color-stop(1, #909eb8));
+	background: -moz-radial-gradient(circle, #909eb800 33%, #909eb8 100%);
+	background: -webkit-radial-gradient(circle,  #909eb800 33%, #909eb8 100%);
+	background: -o-radial-gradient(circle,  #909eb800 33%, #909eb8 100%);
+	background: -ms-radial-gradient(circle,  #909eb800 33%, #909eb8 100%);
+	background: radial-gradient(circle, #909eb800 33%, #909eb8 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#909eb8', endColorstr='#909eb8', gradientType=0);
+/*   브라우저 접두사  */
+}
+main section#intro div ul li:nth-child(2) a{
+  background: -webkit-gradient(radial, center, center, color-stop(0, #b8d1db00), color-stop(1, #b8d1db));
+	background: -moz-radial-gradient(circle, #b8d1db00 33%, #b8d1db 100%);
+	background: -webkit-radial-gradient(circle,  #b8d1db00 33%, #b8d1db 100%);
+	background: -o-radial-gradient(circle,  #b8d1db00 33%, #b8d1db 100%);
+	background: -ms-radial-gradient(circle,  #b8d1db00 33%, #b8d1db 100%);
+	background: radial-gradient(circle,  #b8d1db00 33%, #b8d1db 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b8d1db00', endColorstr='#b8d1db', gradientType=0);
+}
+main section#intro div ul li:nth-child(3) a{
+  background: -webkit-gradient(radial, center, center, color-stop(0, #bfbfbf00), color-stop(1, #bfbfbf));
+	background: -moz-radial-gradient(circle, #bfbfbf00 33%, #bfbfbf 100%);
+	background: -webkit-radial-gradient(circle,  #bfbfbf00 33%, #bfbfbf 100%);
+	background: -o-radial-gradient(circle,  #bfbfbf00 33%, #bfbfbf 100%);
+	background: -ms-radial-gradient(circle,  #bfbfbf00 33%, #bfbfbf 100%);
+	background: radial-gradient(circle,  #bfbfbf00 33%, #bfbfbf 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bfbfbf00', endColorstr='#bfbfbf', gradientType=0);
+}
+main section#intro div ul li:nth-child(4) a{
+  background: -webkit-gradient(radial, center, center, color-stop(0, #d0d4ae00), color-stop(1, #d0d4ae));
+	background: -moz-radial-gradient(circle, #d0d4ae00 33%, #d0d4ae 100%);
+	background: -webkit-radial-gradient(circle,  #d0d4ae00 33%, #d0d4ae 100%);
+	background: -o-radial-gradient(circle,  #d0d4ae00 33%, #d0d4ae 100%);
+	background: -ms-radial-gradient(circle,  #d0d4ae00 33%, #d0d4ae 100%);
+	background: radial-gradient(circle,  #d0d4ae00 33%, #d0d4ae 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d0d4ae00', endColorstr='#d0d4ae', gradientType=0);
+}
 main section#intro div ul li a h3 {
-  color: #111;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+main section#intro div ul li a:hover{
+  color: white;
 }
 main section#intro div ul li a p {
   color: #111;
 }
+
 
 
