@@ -182,8 +182,6 @@ main section#intro {
   padding-bottom: 30px;
 }
 main section#intro div {
-  width: 1100px;
-  margin: 0 auto;
   
 }
 main section#intro div h2 {
@@ -216,6 +214,15 @@ main section#intro div ul li a::before{
   background-size: contain;
   background-repeat: no-repeat;
   margin-bottom: 10px;
+  transition: all;
+}
+main section#intro div ul li a h3::before{
+  content: "";
+  display: block;
+  width: 1em;
+  height: 0.2em;
+  background: black;
+  margin: 10px auto;
 }
 main section#intro div ul li:nth-of-type(2) a::before{
   background-image: url("../img/cloud.svg");
@@ -266,12 +273,15 @@ main section#intro div ul li:nth-child(4) a{
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d0d4ae00', endColorstr='#d0d4ae', gradientType=0);
 }
 main section#intro div ul li a h3 {
-  font-size: 20px;
-  font-weight: 400;
-  margin-bottom: 10px;
+
 }
 main section#intro div ul li a:hover{
+  display:block;
   color: white;
+  background-color: rgb(150,170,200);
+}
+main section#intro div ul li a::before:hover{
+  width: 50%;
 }
 main section#intro div ul li a p {
   color: #111;

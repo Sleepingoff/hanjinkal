@@ -1,12 +1,22 @@
 .wrap{
-
+  width: 1100px;
+  margin: 0 auto;
 }
 .hide{
   display: none;
 }
 .block{
-    display: block;
+  display: block;
 }
 .textcenter{
   text-align: center;
+}
+.h2{
+  font-size: 40px;
+}
+.h3{
+  font-size: 25px;
+}
+.ccc{
+  color: #ccc;
 }
