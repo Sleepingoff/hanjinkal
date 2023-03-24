@@ -224,6 +224,9 @@ main section#intro div ul li a h3::before{
   background: black;
   margin: 10px auto;
 }
+main section#intro div ul li a:first-child::before:hover{
+  background: white;
+}
 main section#intro div ul li:nth-of-type(2) a::before{
   background-image: url("../img/cloud.svg");
 }
@@ -280,10 +283,40 @@ main section#intro div ul li a:hover{
   color: white;
   background-color: rgb(150,170,200);
 }
-main section#intro div ul li a::before:hover{
-  width: 50%;
-}
+
 main section#intro div ul li a p {
+  color: #111;
+}
+
+main section#society div{
+  background: skyblue;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60px 200px; 
+}
+#society {
+  color: #111;
+}
+#society .wrap {
+  color: #111;
+}
+#society .wrap h2 {
+  color: #111;
+}
+#society .wrap p.p {
+  color: #111;
+}
+#society .wrap article {
+  color: #111;
+}
+#society .wrap article img {
+  color: #111;
+}
+#society .wrap article p {
+  color: #111;
+}
+#society .wrap article date {
   color: #111;
 }
 
