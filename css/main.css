@@ -112,6 +112,8 @@ div#title p{
   text-align: center;
   line-height: 1.3;
   margin-bottom: 30px;
+  position: relative;
+  top: -16px;
 }
 div#title a{
   background-color: #4d7195;
@@ -224,8 +226,11 @@ main section#intro div ul li a h3::before{
   background: black;
   margin: 10px auto;
 }
-main section#intro div ul li a:first-child::before:hover{
-  background: white;
+main section#intro div ul li a:hover::before{
+  transform: scale(0.5);
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  background-color: rgb(150,170,200);
 }
 main section#intro div ul li:nth-of-type(2) a::before{
   background-image: url("../img/cloud.svg");
@@ -278,47 +283,107 @@ main section#intro div ul li:nth-child(4) a{
 main section#intro div ul li a h3 {
 
 }
-main section#intro div ul li a:hover{
-  display:block;
-  color: white;
-  background-color: rgb(150,170,200);
-}
 
 main section#intro div ul li a p {
   color: #111;
 }
 
-main section#society div{
-  background: skyblue;
-  padding: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 60px 200px; 
-}
 #society {
   color: #111;
 }
 #society .wrap {
-  color: #111;
+  box-sizing: border-box;
+  background: #eee;
+  background-image: url("../img/main_roll_bg.png");
+  background-repeat: no-repeat;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60px 100px;
+  grid-template-areas:
+    "h2 article"
+    "p article";
 }
 #society .wrap h2 {
-  color: #111;
+  grid-area: h2;
 }
-#society .wrap p.p {
-  color: #111;
+#society .wrap > p.p {
+  grid-area: p;
+  line-height: 1.4;
 }
 #society .wrap article {
-  color: #111;
+  grid-area: article;
+}
+#society a.block::after {
+  content: "+";
+  position: relative;
+  right: -444px;
+  bottom: 13px;
+}
+.block:hover::after {
+  color: yellow;
+}
+#society .wrap article a figure{
+  height: 130px;
+  overflow: hidden;
 }
 #society .wrap article img {
-  color: #111;
+  width: 100%;
+  position: relative;
+  top: -20px;
 }
 #society .wrap article p {
-  color: #111;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 70%;
+  line-height: 2;
 }
-#society .wrap article date {
-  color: #111;
+#news .wrap {
+  padding:20px;
+  position: relative;
 }
-
-
-
+#news h2 {
+}
+#news figure {
+  grid-area: bg_img2;
+  margin: 10px auto;
+  width: 100%;
+}
+#news figure img {
+  width: 80%;
+}
+#news>div>a {
+  display:grid;
+  grid-template-areas: "bg_img2 h32" "bg_img2 p" "bg_img2 .";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 1fr 100px;
+}
+#news h3 {
+  grid-area: h32;
+}
+#news>div>a>p{
+  grid-area: p;
+  height: 100px;
+  overflow:hidden;
+}
+#news ul{
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  width: 450px;
+  white-space: normal;
+  overflow:hidden;
+  text-overflow: ellipsis;
+}
+#news ul a{
+  color: #444;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#news a:hover{
+  color: white;
+  background: #ccc;
+}
