@@ -31,3 +31,6 @@
 .p{
   font-size: 14px;
 }
+.flex{
+  display: flex;
+}

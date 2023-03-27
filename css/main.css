@@ -29,17 +29,20 @@ ul{
   display: flex;
 }
 ul.gnb{
-  
-  border-top: 1px solid gray;
+  border-top: 1px solid #80808073;
 }
-
+ul.gnb li {
+  margin-top: -1px;
+}
 ul.gnb li a{
   padding: 10px 30px;
   display: block;
+  border-top: 2px solid transparent;
+  transition: border 1s;
 }
 ul.gnb li a:hover{
-  color:red;
-  border-top: 1px solid blue;
+  font-weight: 500;
+  border-top: 2px solid #111111;
 }
 ul.etcmenu{
   position: absolute;
@@ -108,6 +111,25 @@ div#title h2::after{
  margin: 0 auto;
   margin-top: 14px;
 }
+div#title::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 240px solid rgb(248, 222, 203);
+  border-right-color: rgb(248, 222, 203);
+  border-right-width: 240px;
+  border-bottom-color: rgb(248, 222, 203);
+  border-left-width: 240px;
+  border-right-width: 390px;
+  border-left-width: 390px;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transition: background-color 1s;
+}
 div#title p{
   text-align: center;
   line-height: 1.3;
@@ -124,6 +146,17 @@ div#title a{
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background 1s;
+  z-index: 1;
+}
+div#title a:hover{
+  background-color: orange;
+}
+div#title a:hover::before{
+  border-bottom-color: orange;
+}
+div#title a:hover::after{
+  border-top-color: orange;
 }
 div#title a::before{
   content: "";
@@ -139,24 +172,8 @@ div#title a::before{
   top: -70px;
   left: 0;
   border-bottom-width: 20px;
-}
-div#title::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  border: 240px solid rgb(248, 222, 203);
-    border-right-color: rgb(248, 222, 203);
-    border-right-width: 240px;
-    border-bottom-color: rgb(248, 222, 203);
-    border-left-width: 240px;
-  border-right-width: 390px;
-  border-left-width: 390px;
-  border-left-color: transparent;
-  border-top-color: transparent;
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  z-index: 1;
+  transition: border-color 1s;
 }
 div#title a::after{
   content: "";
@@ -172,6 +189,8 @@ div#title a::after{
   top: 40px;
   left: 0;
   border-top-width: 20px;
+  z-index: 2;
+  transition: border-color 1s;
 }
 
 /* 메인영역 */
@@ -230,7 +249,9 @@ main section#intro div ul li a:hover::before{
   transform: scale(0.5);
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
-  background-color: rgb(150,170,200);
+}
+main section#intro div ul li a:hover{
+    background-color: rgb(150,170,200);
 }
 main section#intro div ul li:nth-of-type(2) a::before{
   background-image: url("../img/cloud.svg");
@@ -340,42 +361,20 @@ main section#intro div ul li a p {
   line-height: 2;
 }
 #news .wrap {
-  padding:20px;
-  position: relative;
 }
 #news h2 {
-}
-#news figure {
-  grid-area: bg_img2;
-  margin: 10px auto;
-  width: 100%;
-}
-#news figure img {
-  width: 80%;
-}
-#news>div>a {
-  display:grid;
-  grid-template-areas: "bg_img2 h32" "bg_img2 p" "bg_img2 .";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 50px 1fr 100px;
-}
-#news h3 {
-  grid-area: h32;
-}
-#news>div>a>p{
-  grid-area: p;
-  height: 100px;
-  overflow:hidden;
+  margin-bottom: 20px;
 }
 #news ul{
-  display: block;
-  position: absolute;
-  right: 0;
-  bottom: 20px;
-  width: 450px;
-  white-space: normal;
-  overflow:hidden;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  position: relative;
+}
+#news ul:first-child p{
+  overflow: hidden;
   text-overflow: ellipsis;
+  white-space: wrap;
 }
 #news ul a{
   color: #444;
@@ -383,7 +382,56 @@ main section#intro div ul li a p {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-#news a:hover{
+#news li:hover{
   color: white;
-  background: #ccc;
+  background: #aeaeae;
+}
+#news figure{
+  width: calc(50% - 10px);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#news figure img{
+  width: 100%;
+
+}
+#news ul li{
+  width: calc(50% - 30px);
+  
+}
+#news .wrap ul li:nth-of-type(n+2){
+  width: calc(50% - 70px);
+  margin-bottom: 10px;
+}
+#news .wrap ul li:nth-child(2){
+  margin-top: 70px;
+}
+/* 하단영역 */
+footer {
+  background: #f2f2f2;
+  margin-top: 30px;
+}
+footer .wrap div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+footer ul {
+  display: block;
+}
+address {
+  width: 70%;
+}
+footer select {
+  border: none;
+  border-top: 1px solid #ccc;
+  background-color: transparent;
+  padding-top:10px;
+  width: 15%;
 }
