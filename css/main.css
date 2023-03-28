@@ -146,7 +146,7 @@ div#title a{
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background 1s;
+  transition: background 0.5s;
   z-index: 1;
 }
 div#title a:hover{
@@ -224,6 +224,11 @@ main section#intro div ul li a {
   height: 100%;
   width: 100%;
   text-align: center;
+  background-color: white;
+  transition: all 3s;
+  box-sizing: border-box;
+  padding: 10%;
+  position: relative;
 }
 main section#intro div ul li a::before{
   content: "";
@@ -235,7 +240,24 @@ main section#intro div ul li a::before{
   background-size: contain;
   background-repeat: no-repeat;
   margin-bottom: 10px;
-  transition: all;
+  transition: all 0.5s;
+  position: relative;
+  top: 0;
+  z-index: 1;
+}
+main section#intro div ul li a:hover::before{
+  height: 50px;
+  top: 5px;
+}
+main section#intro div ul li a h3{
+  position: relative;
+  z-index: 2;
+  transition: all 0.5s;
+}
+main section#intro div ul li a:hover h3{
+  position: relative;
+  top: 35px;
+  transform: translateY(-100px);
 }
 main section#intro div ul li a h3::before{
   content: "";
@@ -244,14 +266,13 @@ main section#intro div ul li a h3::before{
   height: 0.2em;
   background: black;
   margin: 10px auto;
+  transition: all 0.5s;
+  position: relative;
+  z-index: 2;
 }
-main section#intro div ul li a:hover::before{
-  transform: scale(0.5);
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
-}
-main section#intro div ul li a:hover{
-    background-color: rgb(150,170,200);
+main section#intro div ul li a:hover h3::before{
+  background: white;
+  transform: translateY(50px);
 }
 main section#intro div ul li:nth-of-type(2) a::before{
   background-image: url("../img/cloud.svg");
@@ -301,14 +322,45 @@ main section#intro div ul li:nth-child(4) a{
 	background: radial-gradient(circle,  #d0d4ae00 33%, #d0d4ae 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d0d4ae00', endColorstr='#d0d4ae', gradientType=0);
 }
-main section#intro div ul li a h3 {
-
+main section#intro div ul li a:hover {
+  color: white;
 }
 
 main section#intro div ul li a p {
-  color: #111;
+  display: block;
+  opacity: 0;
+  transition: all 0.5s;
+  font-size: 13px;
+  line-height: 1.4;
+  position: absolute;
+  bottom: -10px;
+  transition: all 0.5s;
+  z-index: 2;
 }
-
+main section#intro div ul li a:hover p {
+  opacity: 1;
+  bottom: 66px;
+}
+main section#intro div ul li a::after {
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: radial-gradient(#aaa, rgb(0,0,255,0.4));
+  opacity: 0;
+  transition: all 0.5s;
+  margin-bottom: ;
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+}
+main section#intro div ul li a:hover::after {
+  opacity: 1;
+  background: radial-gradient(#eee, rgb(0,0,255,0.4));
+}
 #society {
   color: #111;
 }
