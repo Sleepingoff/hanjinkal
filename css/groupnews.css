@@ -13,6 +13,9 @@ section .search select{
     height: 40px;
     margin: 0 5px;
 }
+section .search select:optional{
+    padding: 10px;
+}
 #select1{
     width: 20%;
 }
@@ -22,12 +25,26 @@ section .search select{
 #select3{
     width: 10%;
 }
-.search input{
+.search input#search{
     width: 40%;
     background: white;
     border: 0.5px solid #ccc;
     height: 40px;
     margin: 0 5px;
+    transform: scale(98%);
+    transform-origin: 100% 50%;   
+}
+.search input#reset{
+    width: 5%;
+    background: #ccc;
+    border: 0.5px solid #ccc;
+    height: 40px;
+    margin: 0 5px;
+    background: url(https://www.hanjinkal.co.kr/common/images/btn/reset_btn.gif);
+    font-size: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 110%;
 }
 .search input:placeholder-shown{
     padding: 10px;
@@ -37,7 +54,8 @@ section .search select{
     height: 40px;
     margin: 0 5px;
     border: none;
-    background: #2c7fb0
+    background: #2c7fb0;
+    color: white;
 }
 section .wrap ul{
     flex-direction: column;
