@@ -1,0 +1,80 @@
+section .wrap .search{
+    border: 1px solid #ccc;
+    background: rgb(236, 236, 255);
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 50px 0;
+}
+section .search select{
+    background: white;
+    border: 0.5px solid #ccc;
+    height: 40px;
+    margin: 0 5px;
+}
+#select1{
+    width: 20%;
+}
+#select2{
+    width: 20%;
+}
+#select3{
+    width: 10%;
+}
+.search input{
+    width: 40%;
+    background: white;
+    border: 0.5px solid #ccc;
+    height: 40px;
+    margin: 0 5px;
+}
+.search input:placeholder-shown{
+    padding: 10px;
+}
+.search button{
+    width: 10%;
+    height: 40px;
+    margin: 0 5px;
+    border: none;
+    background: #2c7fb0
+}
+section .wrap ul{
+    flex-direction: column;
+    align-items: center;
+}
+section .wrap ul li a{
+    display: grid;
+    grid-template-columns: 25% calc(75% - 30px);
+    grid-template-rows: 20px 85px auto;
+    grid-template-areas: 
+        "img h3"
+        "img p"
+        "img date";
+    column-gap: 50px;
+    margin: 30px 0;
+    row-gap: 15px;
+}
+.wrap ul li a figure{
+    grid-area: img;
+    width: 300px;
+}
+section .wrap ul li a figure img{
+    width: 100%;
+}
+section .wrap ul li a .h4{
+    grid-area: h3;
+}
+section .wrap ul li a .p.ccc{
+    grid-area: p;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+section .wrap ul li a .date{
+    grid-area: date;
+    line-height: 1.5;
+}

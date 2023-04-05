@@ -1,0 +1,250 @@
+웹문서 = html문서 +css문서+javascript문서
+html? 언어
+hyper
+text
+markup
+language
+(마크업언어:컨텐츠의 의미,역활을 표시한다)
+- <>로 표시 </>
+h1 : 제목
+p:  문단,설명
+
+html문서는 html언어로 쓰여진 문서,html언어로 컨텐츠의 의미역활을 표시한 문서 
+
+
+/2회차
+link : css파일을 html문서에 연결하는 태그
+a태그 : 문서를 연결하는 역활 anchor  닷
+css설명
+
+브라우저기본스타일
+
+/3회차
+- li:list 목록
+- ul : li묶음 unordered list
+- 젠코딩
+- div : division 분할,영역
+    상단전용div -> header
+    메뉴네비게이션 전용 div -> nav
+
+- 태그는 블럭태그와 인라인태그로 나뉜다
+  블럭태그는 너비는 화면에 꽉찬다,높이는 내용물만큼 늘어난다    
+  블럭태그는 수직으로 쌓인다
+  header,div,h1~h6,ul,li,p
+
+- 인라인(inline)태그는 너비가 컨텐츠만큼만 커진다
+  수평으로 배치된다.
+  너비높이를 줘도 적용이 안된다
+  패딩이 제대로 적용이 안된다
+  a
+
+- 브라우저기본스타일을 초기화하기
+
+- 태그에 이름지정하여 특정이름을 가진태그에만 스타일 지정하기
+  <태그 class="영어이름">  - html문서에서 태그에 이름지정
+  .영어이름 - css문서에 이름지정한후 스타일 지정하기
+
+  예) <ul class="etcmenu">
+      .etcmenu{
+        
+      }
+
+/4회차
+position:absolute설명
+margin설명
+?하위선택자
+?class추가설명
+?gnb : global navigation bar
+?class설명필요
+main태그
+footer태그
+padding : 안쪽여백,면적이 커진다,다른요소와 붙어있는 상태이다
+:hover 마우스를 올린상태
+
+/ display:block; 인라인태그를 블럭태그로 전환
+
+/ id 태그이름지정 현재문서에서 한번만 사용가능
+ <div id="title"> :html에서
+ #title : css문서에서
+ 
+ /br 줄바꿈태그
+
+/ span태그 인라인요소를 묶어주는 태그(의미는 없음)
+
+/ 마크업과 css정리
+
+1 마크업
+  header 상단영역태그
+  h1 제목태그
+  a 링크태그
+  p 문단,설명
+  nav 메뉴묶음
+  ul li묶음
+  li 목록
+  br 줄바꿈
+  span 인라인요소 묶음
+  div 영역
+  main 메인영역
+  footer 하단영역
+--12
+2 css  
+  width 너비지정
+  height 높이
+  margin:0 auto 수평중앙정렬(블럭태그에게만)
+  padding 안쪽여백
+  display:flex  수평정렬
+  justify-content 수평정렬옵션
+  flex-direction 수직정렬
+  align-items 수직정렬옵션
+  font-size 글자크기
+  font-weight 글자두께
+  color 글자색
+  background-color 배경색
+  position:absolute 위치지정
+  top,bottom,left,right 위치지정속성
+  position:relative 기준점
+  border 테두리선
+  line-height 글높이,줄간격
+  text-align 텍스트정렬(인라인태그중앙정렬 text-align:center)
+  text-decoration: none 밑줄없애기
+  list-style: none 점표시 없애기
+  background-image
+  background-repeat
+  background-size
+  background-position
+  background-attachment
+  calc
+  font-family 웹폰트(구글폰트)
+--25  
+
+5회차 --------------------------------------------------
+/ 배경이미지 지정하기
+  background-image:url()
+  배경옵션들
+ 
+/ 상대경로
+? calc() 
+? 웹폰트 
+
+6회차----------------------------------------
+/ 가상선택자 /* 가상선택자 ::before,::after
+
+/ 특수문자
+
+/ :first-child 첫번째자식 */
+
+/ 선택자 분류와 설명		https://www.nextree.co.kr/p8468/
+
+/ vertical-align: 2px; /* vertical-align 글자수직정렬 */
+
+/ 온라인편집기
+
+/ 하위선택자와 자식선택자 비교설명
+  div h2 a{ div아래있는 모든 a
+
+  }
+  div>a{ div 바로아래 있는 a
+
+  }
+
+7회차 -------------------------------------
+
+/position관련 z-index속성
+ z-index:숫자;
+
+/section태그 절,장,같은 부류의 정보를 묶음
+
+/색상값
+ red...
+ ?16진법 #333333
+ ?rgba(red,green,blue,alpha)
+
+/sass로 선택자배치 10빠르게 하기 
+
+8회차 --------------------------------
+
+/ nth-child()
+
+/ opacity 투명도
+
+/ 원형그라디언트,선형그라디언트  css3studio.com
+
+/ 브라우저 접두사  vendor prefix,css3 vendor prefix
+
+
+9회차 ---------------
+
+/article
+
+/img태그
+
+
+10회차 ----------------
+
+/ img태그는 중요 컨텐츠일때 html문서내에 배치하여 표시한다.주요한 컨텐츠는 텍스트로 기재하는 것을 원칙으로 한다.
+  꾸며주는 용도나 교체가능한 이미지는 css로 배경이미지처리한다.
+
+/ 트래픽 https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=2014suho&logNo=220126351232
+
+/ figure,figcaption
+
+/ position:relative의 특성중 하나는 위치를 이동(top,left..)시켜도 인접해있는 요소가 흔들리지 않는다.
+  position:relative된 요소의 원래위치영역이 보존되어 다른요소에 영향을 주지 않는다.
+
+  
+  
+  11회차 -------------------
+
+  /address태그
+
+  /select태그
+
+  /transition 변이 선택자 처음 상태와 선택자 바뀐상태의 값의 차이를 변화시킴(애니)
+              원래상태의 선택자에 transition지정
+              transition:속성명 초; 
+
+ / transform:translateY(수치값) : 다른 요소에는 영향을 미치지 않고(position:relative처럼) 형태변화시킨다(위치,크기,회전...) 
+   >> position:relative를 사용하지 않아도 된다....
+   >> 차이점은 position:relative는 위치변화만 가능 (위아래좌우또 앞뒤 z-index)
+      z-index를 쓰려면 꼭 position속성을 사용해야 한다.
+      단순히 다른요소에 영향을 주지않고 위치나 크기나 회전등의 형태변환을 할때는 transform속성을 사용하는 것이 훨(대박) 편하다
+                   
+
+12회차 ----------------------
+
+/ css파일의 세분화
+
+/ button태그
+
+/ transform:rotate(숫자deg)
+
+13회차 -------------------------
+
+1 strong태그 
+
+2 breadcrumb
+
+3 ol태그  순서(순위)가 있는 목록
+  ordered list
+
+4 웹아이콘  
+  구글아이콘
+
+5 svg
+  벡터방식과 비트맵방식
+
+6 내부스타일 (html문서내의 head안내 스타일명령을 쓰는것)
+  <style>
+        .blue{
+            color:blue;
+        }
+  </style>
+
+7 태그내스타일 ()
+  <h1 style="border:2px solid #000;font-size:12px;"></h1>
+
+14회차 ----------------------------------
+
+1 dl태그 https://aboooks.tistory.com/211
+
+2 min-height : 최소높이

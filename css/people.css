@@ -1,0 +1,97 @@
+#people section{
+    
+}
+#people section div{
+
+}
+#people section div h3{
+
+}
+#people section div p{
+ line-height: 5;
+}
+#people section div ul{
+  gap: 30px;
+  text-align: center;
+}
+#people section div ul li{
+  width: calc(100% / 3 - 60px / 3);
+  position: relative;
+}
+#people section div ul li::before{
+  content: "";
+  width: 200px;
+  height: 200px;
+  display: block;
+  background-color: #2c74d1;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 2px 7px 2px #ccc;
+}
+#people section div ul li h4{
+
+}
+#people section div ul li h4 i{
+font-size: 104px;
+color: white;
+position: absolute;
+left: calc(50% - 29.2px);
+top: calc(100px - 57px);
+}
+#people section div ul li h4::after{
+ display: block; 
+ color: #999;
+ font-size: 13px;
+ margin-top:10px 
+}
+#people section div ul li:nth-child(1) h4::after{
+ content: "창의와 신념"; 
+}
+#people section div ul li:nth-child(2) h4::after{
+ content: "성의와 실천";  
+}
+#people section div ul li:nth-child(3) h4::after{
+ content: "책임과 봉사";  
+}
+#people section div ul li h4 + span{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  transform: translateY(-20px);
+}
+#people section div ul li h4 + span i{
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: #ccc;
+  border-radius:50%;
+}
+#people section div ul li dl{
+  border: 1px solid #ccc;
+  border-top: 3px solid blue;
+  padding: 20px;
+  padding-bottom: 40px;
+  min-height: 220px;
+  box-sizing: border-box;
+}
+#people section div ul li dl dt{
+  margin-bottom: 25px;
+}
+#people section div ul li dl dd{
+  text-align: left;
+  line-height: 1.4;
+  margin-bottom: 11px;
+  padding: 0 7px;
+}
+#people section div ul li dl dd::before{
+ content:""; 
+ display: inline-block;
+ width: 4px;
+ height: 4px;
+ background-color: #ccc;
+ margin-right: 10px;
+ position: absolute;
+ left: 18px;
+ transform: translateY(7px);
+}

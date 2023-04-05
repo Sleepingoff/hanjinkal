@@ -1,0 +1,91 @@
+.margin30{
+ margin-top:30px; 
+ margin-bottom:30px; 
+}
+.padding30{
+ padding-top:30px; 
+ padding-bottom:30px; 
+}
+.padding100{
+ padding-top:100px; 
+ padding-bottom:100px;  
+}
+.wrap{
+  width: 1100px;
+  margin: 0 auto;
+}
+.hide{
+  display: none;
+}
+.block{
+  display: block;
+}
+.textcenter{
+  text-align: center;
+}
+.h1{
+  font-size: 50px;
+}
+.h2{
+  font-size: 40px;
+}
+.h3{
+  font-size: 23px;
+}
+.h4{
+  font-size: 20px;
+}
+.p{
+  font-size: 14px;
+}
+.bold{
+  font-weight: bold;
+}
+.blue{
+  color:#00a0c6;
+}
+.ccc{
+  color:#555;
+}
+.flex{
+  display: flex;
+}
+img{
+  width: 100%;
+}
+.breadcrumb{
+  background-color: #0a92bdaa;
+  margin-top: -50px;
+  position: relative;
+}
+.breadcrumb ol li{
+  text-align: center;
+}
+.breadcrumb ol li:first-child{
+  width: 50px;
+  background-color: #097fa4;
+}
+.breadcrumb ol li:not(:first-child){
+/*   첫번째를 제외한 */
+  line-height: 50px;
+  border-right: 1px solid #eee5;
+  color:#fff;
+  min-width: 180px;
+}
+.breadcrumb ol li a{
+  display: block;
+  line-height: 50px;
+  color: #eee;
+  
+}
+.breadcrumb ol li:first-child a{
+  font-size: 0;
+  width: 50px;
+  background-image: url(../img/home.svg);
+  background-size: 64%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bordertop{
+  border-top: 3px solid blue !important;
+}

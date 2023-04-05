@@ -1,0 +1,118 @@
+#governance{
+
+}
+/* 페이지 주소 */
+#governance nav{
+
+}
+#governance nav ol{
+  
+}
+#governance nav ol li{
+  
+}
+#governance nav ol li:first-child{
+
+}
+#governance nav ol li:nth-child(n+2){
+
+}
+#governance nav ol li:last-child{
+
+}
+#governance nav ol li a{
+
+}
+#governance nav ol li:first-child a{
+
+}
+#governance section{
+    
+}
+#governance section div{
+
+}
+
+#governance section div strong:nth-child(1){
+  line-height: 1.3;
+  margin-bottom: 30px;
+  font-family: "Pretendard Std Variable", "Pretendard Std", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+#governance section div strong:nth-child(2){
+  margin-bottom: 30px;
+  font-family: "Pretendard Std Variable", "Pretendard Std", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+#governance section div strong:nth-child(2)::before{
+ content: "";
+ width: 100%;
+ display: block; 
+ border-top:2px solid blue;
+ margin-bottom:20px; 
+}
+#governance section div p{
+  line-height: 1.4;
+  margin-bottom: 20px;
+  font-family: "Pretendard Std Variable", "Pretendard Std", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+#governance section div p:nth-of-type(n+1):nth-of-type(-n+6){
+  color: #777;
+}
+
+#governance section div ul{
+  background-color: #eee;
+  border: 1px solid #bbb;
+}
+#governance section div ul li{
+  width: calc(100% / 6);
+}
+#governance section div ul li:not(:first-child){
+  border-left: 1px solid #bbb;
+}
+#governance section div ul li a{
+  display: block;
+  text-align: center;
+  line-height: 3;
+}
+#governance section div ul li:first-child a{
+}
+#governance section div  h3{
+  margin-top:80px;
+  margin-bottom: 20px;
+}
+#governance section div h3+div{ /* + 형제선택자 h3바로뒤에오는 div */  
+  border: 1px solid #ccc;
+  padding: 20px;
+  padding-bottom: 40px;
+  width: 1100px;
+  box-sizing: border-box;
+}
+#governance section div ul li p{
+    
+}
+.current{
+  background-color: white;
+  border: 1px solid blue;
+  border-bottom-color: white;
+  border-top-width: 2px;
+  transform: scale(1.02);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

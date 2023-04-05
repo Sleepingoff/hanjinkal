@@ -1,0 +1,289 @@
+
+/* 메인영역-한진소개 */
+main {
+  
+}
+main section#intro {
+
+}
+main section#intro div {
+}
+main section#intro div h2 {
+  display: none;
+}
+main section#intro div ul {
+  justify-content: space-between;
+  display: flex;
+}
+main section#intro div ul li {
+width: calc(100% / 4 - 60px / 4);
+height: 260px;
+transition: all 0.5s;
+}
+main section#intro div ul li:nth-child(1){
+  
+}
+main section#intro div ul li:hover{
+  box-shadow: 0px 0px 10px #999;
+}
+main section#intro div ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+main section#intro div ul li:nth-child(1) a{
+ background: -webkit-gradient(radial, circle, color-stop(0.31, #94a8b755), color-stop(0.72, #94a8b7));
+ background: -moz-radial-gradient(circle, #94a8b755 33%, #94a8b7 100%);
+ background: -webkit-radial-gradient(circle, #94a8b755 33%, #94a8b7 100%);
+ background: -o-radial-gradient(circle,  #94a8b755 33%, #94a8b7 100%);
+ background: -ms-radial-gradient(circle,  #94a8b755 33%, #94a8b7 100%);
+ background: radial-gradient(circle, #94a8b755 33%, #94a8b7 100%);	
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#94a8b755', endColorstr='#94a8b7', gradientType=0);
+ transition: all 0.5s;
+}
+
+main section#intro div ul li:nth-child(2) a{
+ background: -webkit-gradient(radial, circle, color-stop(0.31, #b7ccd355), color-stop(0.72, #b7ccd3));
+ background: -moz-radial-gradient(circle, #b7ccd355 33%, #b7ccd3 100%);
+ background: -webkit-radial-gradient(circle, #b7ccd355 33%, #b7ccd3 100%);
+ background: -o-radial-gradient(circle,  #b7ccd355 33%, #b7ccd3 100%);
+ background: -ms-radial-gradient(circle,  #b7ccd355 33%, #b7ccd3 100%);
+ background: radial-gradient(circle, #b7ccd355 33%, #b7ccd3 100%);	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#94a8b755', endColorstr='#94a8b7', gradientType=0);
+}
+main section#intro div ul li:nth-child(3) a{
+ background: -webkit-gradient(radial, circle, color-stop(0.31, #94a8b755), color-stop(0.72, #94a8b7));
+ background: -moz-radial-gradient(circle, #94a8b755 33%, #94a8b7 100%);
+ background: -webkit-radial-gradient(circle, #94a8b755 33%, #94a8b7 100%);
+ background: -o-radial-gradient(circle,  #94a8b755 33%, #94a8b7 100%);
+ background: -ms-radial-gradient(circle,  #94a8b755 33%, #94a8b7 100%);
+ background: radial-gradient(circle, #fcfcfd94 33%, #94a8b7 100%);	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#94a8b755', endColorstr='#94a8b7', gradientType=0);
+}
+main section#intro div ul li:nth-child(4) a{
+ background: -webkit-gradient(radial, circle, color-stop(0.31, #94a8b755), color-stop(0.72, #94a8b7));
+ background: -moz-radial-gradient(circle, #94a8b755 33%, #94a8b7 100%);
+ background: -webkit-radial-gradient(circle, #94a8b755 33%, #94a8b7 100%);
+ background: -o-radial-gradient(circle,  #94a8b755 33%, #94a8b7 100%);
+ background: -ms-radial-gradient(circle,  #94a8b755 33%, #94a8b7 100%);
+ background: radial-gradient(circle, #fcfcfd94 33%, #94a8b7 100%);	
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#94a8b755', endColorstr='#94a8b7', gradientType=0);
+}
+
+main section#intro div ul li a::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 94px;
+  background-image: url(../img/stream.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  /*! background-size: 33%; */
+  margin-bottom: 10px;
+  transition: all 0.5s;
+  position: relative;
+  top: 0;
+  z-index: 2;
+}
+
+main section#intro div ul li a:hover::before{
+  height: 50px;
+  top: -30px;
+}
+main section#intro div ul li:nth-child(2) a::before{
+  background-image: url(../img/cloud.svg);
+}
+main section#intro div ul li:nth-child(3) a::before{
+  background-image: url(../img/settings.svg);
+}
+main section#intro div ul li:nth-child(4) a::before{
+  background-image: url(../img/podcasts.svg);
+}
+main section#intro div ul li a h3 {
+  transition: all 0.5s;
+  position: relative;
+  z-index: 3;
+}
+main section#intro div ul li a:hover h3{
+  transform: translateY(-100px);
+  color: white;
+}
+main section#intro div ul li a h3::before{
+  content: "";
+  width: 23px;
+  height: 4px;
+  display: block;
+  background-color: #333;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  top:0;
+  transition: all 0.5s;
+}
+main section#intro div ul li a:hover h3::before{
+ top: 66px;
+ background-color: #fff;
+}
+main section#intro div ul li a p {
+  display: block;
+  opacity: 0;
+  transition: all 0.5s;
+  font-size: 13px;
+  margin-top: 20px;
+  line-height: 1.4;
+  position: absolute;
+  bottom: 0;
+  z-index: 4;
+}
+main section#intro div ul li a:hover p{
+  opacity: 1;
+  bottom: 84px;
+  color: white;
+}
+main section#intro div ul li a::after{
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: -webkit-gradient(radial, circle, color-stop(0.31, #296da1aa), color-stop(0.72, #296da1));
+  background: -moz-radial-gradient(circle, #296da1aa 33%, #296da1 100%);
+  background: -webkit-radial-gradient(circle, #296da1aa 33%, #296da1 100%);
+  background: -o-radial-gradient(circle,  #296da1aa 33%, #296da1 100%);
+  background: -ms-radial-gradient(circle,  #296da1aa 33%, #296da1 100%);
+  background: radial-gradient(circle, #296da1aa 33%, #296da1 100%);	
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#296da1aa', endColorstr='#296da1', gradientType=0);
+  opacity: 0;
+  transition:all 0.5s;
+  z-index: 1;
+}
+main section#intro div ul li a:hover::after{
+  opacity: 1;
+}
+/* 사회공헌 */
+#society {
+  
+}
+#society .wrap {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  background-image: url(../img/society-bg.png);
+  background-repeat: no-repeat;
+  background-position-x: 34%;
+}
+#society .wrap h2 {
+  
+}
+#society .wrap>p.p {
+  position: absolute;
+  left: 20px;
+  top: 61px;
+  line-height: 1.4;
+}
+#society .wrap article {
+  
+}
+#society .wrap article a {
+  border: 3px solid transparent;
+  transition:all 0.5s;
+}
+#society .wrap article a:hover{
+  border: 3px solid #999;
+  background-color: #ccc;
+}
+#society .wrap article a figure{
+  height: 130px;
+  overflow: hidden; /* 부모영역을 넘쳐나온 콘텐츠를 감춤 */
+}
+#society .wrap article a img {
+  width: 100%;
+  position: relative;
+  top: -16px;
+  transition: all 0.5s;
+}
+#society .wrap article a img:hover{
+  opacity: 0.3;
+}
+#society .wrap article a p {
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 2;
+}
+#society .wrap article a date {
+  
+}
+/* 한진뉴스 */
+
+#news {
+ 
+}
+#news .wrap {
+ 
+}
+#news .wrap h2 {
+  margin-bottom: 20px;
+}
+#news .wrap ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  position: relative;
+  line-height: 1.2;
+  color: red;
+}
+#news .wrap ul li:first-child {
+ 
+  margin-bottom: 70px;
+}
+#news .wrap ul li:first-child a {
+ 
+}
+#news .wrap ul li:first-child a figure {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: calc(50% - 10px);
+}
+#news .wrap ul li:first-child a figure img {
+  width: 100%;
+}
+#news .wrap ul li:first-child a figure figcaption {
+ 
+}
+#news .wrap ul li:first-child a h3 {
+ 
+  margin-bottom: 15px;
+}
+#news .wrap ul li:first-child a p {
+ 
+}
+#news .wrap ul li {
+  width: calc(50% - 30px);
+}
+#news .wrap ul li:nth-child(n+2){
+  width: calc(50% - 70px);
+  margin-bottom: 10px;
+}
+#news .wrap ul li a {
+ 
+}
+#news .wrap ul li a h3 {
+ 
+}
+#news .wrap ul li a date {
+ 
+}

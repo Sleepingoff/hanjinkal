@@ -1,0 +1,41 @@
+/* footer */
+footer {
+    background-color: #eee;
+    font-family: "Pretendard Std Variable", "Pretendard Std", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  }
+  footer .wrap {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  footer .wrap ul {
+    
+  }
+  footer .wrap ul li {
+    
+  }
+  footer .wrap ul li a {
+    
+  }
+  footer .wrap address {
+    width: 55%;
+  }
+  footer .wrap select {
+    border: none;
+    background-color: transparent;
+    border-top: 1px solid #999;
+    line-height: 2;
+    height: 36px;
+    width: 13%;
+  }
+  footer .wrap select option {
+    
+  }
+  footer .wrap p {
+    width: 100%;
+    border-top: 1px solid #999;
+    margin-top: 15px;
+    padding-top: 15px;
+    font-size: 13px;
+  }
