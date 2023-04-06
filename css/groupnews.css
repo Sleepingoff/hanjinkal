@@ -36,15 +36,15 @@ section .search select:optional{
 }
 .search input#reset{
     width: 5%;
-    background: #ccc;
+    background-color: #ccc;
     border: 0.5px solid #ccc;
     height: 40px;
     margin: 0 5px;
-    background: url(https://www.hanjinkal.co.kr/common/images/btn/reset_btn.gif);
+    background-image: url("../img/renew.svg");
     font-size: 0;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 110%;
+    background-size: 70%;
 }
 .search input:placeholder-shown{
     padding: 10px;
