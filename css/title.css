@@ -12,6 +12,7 @@ div#title{
     background-position-y: 73%;
     background-attachment: fixed;
     position: relative;
+    transition: all 0.5s;
   }
   div#title::before{
     content: "";
@@ -50,6 +51,7 @@ div#title{
     margin-bottom: 30px;
     position: relative;
     top: -16px;
+    transition: all 0.5s;
   }
   div#title a{
     background-color: green;

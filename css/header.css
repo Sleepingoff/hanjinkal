@@ -13,6 +13,7 @@ body{
     position: absolute;
     left: calc(50% - 550px);
     z-index: 1;
+    transition: all 0.5s;
   }
   header h1{
    
@@ -26,6 +27,7 @@ body{
   }
   header nav{
     display: flex;
+    align-items: center;
   }
   ul{
   }
@@ -70,6 +72,19 @@ body{
     font-size: 7px;
     vertical-align: 2px; /* vertical-align 글자수직정렬 */
   }
-  li{
-    
-  }
+.ham{
+  font-size: 0;
+  border: none;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+.ham::before{
+  content: "";
+  width: 100%;
+  display: block;
+  height: 2px;
+  background-color: #fff;
+}

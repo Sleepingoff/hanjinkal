@@ -1,0 +1,182 @@
+/* tablet */
+@media screen and (max-width: 1024px){
+    header{
+        width: 100%;
+        left: auto;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    header h1 a{
+        margin-top: 10px;
+    }
+    ul.gnb{
+        position: absolute;
+        left: 0;
+        top: 80px;
+        width: 100%;
+        border: none;
+        justify-content: center;
+    }
+    ul.etcmenu{
+        position: static;
+    }
+    main section{
+        padding: 0 10px;
+    }
+    main section#intro div ul li{
+        height: 24vw;
+    }
+    main section#intro div ul li a::before{
+        height: 8.5vw;
+    }
+    #society .wrap{
+        background-image: none;
+    }
+    #news .wrap ul{
+        display: block;
+    }
+    #news .wrap ul li{
+        width: auto;
+    }
+    #news .wrap ul li:first-child a{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 40px auto;
+        gap: 20px;
+    }
+    #news .wrap ul li:first-child a figure{
+        position: static;
+        width: auto;
+        grid-row: 1 / span 2;
+        grid-column: : 1 / 2;
+    }
+    #news .wrap ul li:first-child a h3{
+        grid-row: 1 / span 1;
+    }
+    #news .wrap ul li:first-child a p{
+        grid-row: 2 / span 1;
+        grid-column: : 2 / 3;
+    }
+    #news .wrap ul li:nth-child(n+2){
+        width: auto;
+    }
+}
+/* mobile */
+@media screen and (max-width: 760px){
+    header {
+        width: 100%;
+        left: 0;
+    }
+    header h1{
+        margin: 0 auto;
+    }
+    header h1 a{
+        transform: scale(0.6);
+    }
+    header nav ul:not(:last-child){
+        display: none;
+    }
+    .ham{
+        display: block;
+        transform: translateX(-20px);
+    }
+/*     title */
+    div#title{
+        height: 100%;
+        min-height: 440px;
+    }
+    div#title::before{
+        display: none;
+    }
+    div#title::after{
+        display: none;
+    }
+    div#title p{
+        transform: scale(0.77);
+        top: calc(-16px * 0.77);
+        margin-bottom: calc(30px * 0.77);
+    }
+    div#title a{
+        transform: scale(0.77);
+    }
+    main section#intro div ul{
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+    main section#intro div ul li{
+        min-width: calc(100% / 2 - 10px / 2);
+        height: 42vw;
+    }
+    main section#intro div ul li a::before {
+        height: calc(94px * 0.77);
+        top: 0;
+    }
+    
+    main section#intro div ul li a:hover::before {
+        height: calc(50px * 0.77);
+        top: 0;
+    }
+    main section#intro div ul li a:hover h3 {
+      transform: translateY(-70px);
+    }
+    main section#intro div ul li a:hover h3::before{
+        top: 60px;
+    }
+    main section#intro div ul li a:hover p{
+        bottom: 20px; 
+    }
+    
+/*     common */
+    .wrap{
+        padding: 0 10px;
+    }
+    .h1{
+        font-size: calc(50px * 0.77);
+    }
+    .h2{
+        font-size: calc(40px * 0.77);
+    }
+    .h3{
+      font-size: calc(23px * 0.77);
+    }
+    .h4{
+      font-size: calc(20px * 0.77);
+    }
+    .padding30{
+        padding-top: calc(30px * 0.77); 
+        padding-bottom: calc(30px * 0.77); 
+    }
+    #society .wrap{
+        flex-direction: column;
+        background-position-x: 200px;
+        background-position-y: -30px;
+    }
+    #society .wrap > p.p{
+        position: static;
+        margin: 10px 0;
+    }
+    #news .wrap{
+        padding: 20px;
+    }
+    #news .wrap ul{
+        justify-content: center;
+        align-items: center;
+    }
+    #news .wrap ul li{
+        width: 100%;
+    }        
+    #news .wrap ul li:first-child a figure{
+        position: static;
+        width: 100%;
+    }
+    #news .wrap ul li:nth-child(n+2){
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    #news .wrap ul li a date{
+        display: block;
+        text-align: right;
+    }
+}
