@@ -1,3 +1,6 @@
+#subtitle button:nth-of-type(1){
+  display: none;
+}
 #company{
 
 }
@@ -30,8 +33,6 @@
     
 }
 #company section div{
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 #company section div strong{
     

@@ -1,3 +1,6 @@
+#subtitle button:nth-of-type(1){
+  display: none;
+}
 #governance{
 
 }
@@ -83,7 +86,7 @@
   border: 1px solid #ccc;
   padding: 20px;
   padding-bottom: 40px;
-  width: 1100px;
+  max-width: 1100px;
   box-sizing: border-box;
 }
 #governance section div ul li p{

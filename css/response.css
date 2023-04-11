@@ -1,5 +1,5 @@
 /* tablet */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1200px){
     header{
         width: 100%;
         left: auto;
@@ -8,6 +8,9 @@
     }
     header h1 a{
         margin-top: 10px;
+        background-image: url(../img/hj_logo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
     }
     ul.gnb{
         position: absolute;
@@ -20,8 +23,30 @@
     ul.etcmenu{
         position: static;
     }
+    #subtitle .wrap button{
+
+    }
+    #subtitle .wrap button:nth-of-type(1)::before{
+        left: -10px;
+    }
+    #subtitle .wrap button:nth-of-type(1)::after{ 
+          transform:translateX(-115px) translateY(3px) rotate(225deg);
+    }
+    #subtitle .wrap button:nth-of-type(2)::before{
+        right: 5px;
+    }
+    #subtitle .wrap button:nth-of-type(2)::after {
+        transform: translateX(-18px) translateY(4px) rotate(45deg);
+    }
+    div#title::before {
+        display: none;
+    }
+    div#title::after {
+        display: none;
+    }
     main section{
         padding: 0 10px;
+        box-sizing: border-box;
     }
     main section#intro div ul li{
         height: 24vw;
@@ -55,14 +80,41 @@
     }
     #news .wrap ul li:first-child a p{
         grid-row: 2 / span 1;
-        grid-column: : 2 / 3;
     }
     #news .wrap ul li:nth-child(n+2){
         width: auto;
     }
+    #news .wrap ul li:nth-child(n+2) a{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #greeting section .wrap ul li a{
+        width: 100%;
+        grid-template-columns: auto auto;
+        gap: 20px;
+    }
+    #company section div ul li{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    #company section div ul li figure{
+        height: 230px;
+        overflow: hidden;
+    }
+    #company section div ul li h3{
+        
+    }
+    #company section div ul li p{
+
+    }
+    footer .wrap{
+        padding: 0 10px;
+    }
 }
 /* mobile */
-@media screen and (max-width: 760px){
+@media screen and (max-width: 768px){
     header {
         width: 100%;
         left: 0;
@@ -76,9 +128,36 @@
     header nav ul:not(:last-child){
         display: none;
     }
+    ul.etcmenu{
+        display: none;
+    }
     .ham{
         display: block;
-        transform: translateX(-20px);
+        transform: translateX(-20px) translateY(10px);
+    }
+    header nav:hover ul:first-child{
+        display: block;
+        background: white;
+        position: absolute;
+        right: 0;
+        top: 0;
+        text-align: center;
+    }
+    footer .wrap{
+        justify-content: space-between;
+        gap: 10px;
+    }
+    footer .wrap ul{
+        width: 100%;
+        display: flex;
+        gap: 10px;
+    }
+    footer .wrap address{
+        width: 100%;
+    }
+    footer .wrap select{
+        width: 50%;
+        margin-top: 20px;
     }
 /*     title */
     div#title{
@@ -99,6 +178,7 @@
     div#title a{
         transform: scale(0.77);
     }
+/* intro */
     main section#intro div ul{
         flex-wrap: wrap;
         row-gap: 10px;
@@ -127,8 +207,14 @@
     }
     
 /*     common */
+    .block{
+        display: initial;
+    }
     .wrap{
         padding: 0 10px;
+    }
+    main>section>div{
+        padding-top: calc(100px * 0.77) !important;
     }
     .h1{
         font-size: calc(50px * 0.77);
@@ -146,6 +232,10 @@
         padding-top: calc(30px * 0.77); 
         padding-bottom: calc(30px * 0.77); 
     }
+    .breadcrumb{
+        display: none;
+    }
+/*     section */
     #society .wrap{
         flex-direction: column;
         background-position-x: 200px;
@@ -155,6 +245,7 @@
         position: static;
         margin: 10px 0;
     }
+/*     news */
     #news .wrap{
         padding: 20px;
     }
@@ -164,7 +255,11 @@
     }
     #news .wrap ul li{
         width: 100%;
-    }        
+    }
+    #news .wrap ul li:first-child a{
+        display: flex;
+        flex-direction: column;
+    }
     #news .wrap ul li:first-child a figure{
         position: static;
         width: 100%;
@@ -178,5 +273,119 @@
     #news .wrap ul li a date{
         display: block;
         text-align: right;
+    }
+/*     subtitle */
+    #subtitle .wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    #subtitle .wrap button{
+        justify-content: center;
+        position:  static;
+    }
+    #subtitle .wrap button:nth-of-type(1)::before{
+        display: none;
+    }
+    #subtitle .wrap button:nth-of-type(1)::after{
+        transform: translateX(-100px) translateY(2px) rotate(225deg);
+    }
+    #subtitle .wrap button:nth-of-type(2)::before{
+        display: none;
+    }
+    #subtitle .wrap button:nth-of-type(2)::after{
+        transform: translateX(-30px) translateY(2px) rotate(45deg);
+    }
+/*     greeting */
+    #greeting section div strong{
+        display: block;
+    }
+    #greeting section div strong:nth-child(2){
+        line-height: 1.2;
+    }
+    #greeting section .wrap ul li a{
+        display: flex;
+        flex-direction: column;
+    }
+    #greeting section .wrap ul li a .date{
+        font-size: 70%;
+        text-align: right;
+    }
+/*     company */
+    #company section div ul{
+    }
+    #company section div ul li{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    #company section div strong:nth-child(1){
+        display: block;
+    }
+/*    governance */
+    #governance section div{
+        width: auto;
+    }
+    #governance section div ul{
+        flex-wrap: wrap;
+    }
+    #governance section div ul li:first-child{
+        width: 100%;
+    }
+    #governance section div ul li:not(:first-child){
+        min-width: calc(100% / 5 - 5px * 4 / 5);
+        font-size: 65%;
+    }
+    
+    section .wrap .search{
+        flex-wrap: wrap;
+        margin: calc(50px * 0.77) 0;
+        justify-content: space-between;
+        height: fit-content;
+    }
+    section .wrap .search select{
+        display: none;
+    }
+    .search input#search{
+        width: 70%;
+        margin: 0;
+    }
+    .search button{
+        width: 25%;
+    }
+    .search input[type="reset"]{
+        display: none;
+    }
+/*     TalentManagement */    
+    #human .grid{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #human .grid .h5{
+        align-self: start;
+        margin: 10px;
+    }
+    #rights .wrap {
+        width: calc(100% - 10px * 2);
+    }
+    #rights .wrap .topline{
+        flex-direction: column;
+    }
+    #rights .wrap .topline div{
+        width: calc(100% - 10px * 2);
+        margin: 0;
+    }
+    #rights .wrap .topline .h2 {
+        min-width: 240px;
+        line-height: 1.2;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    #rights .wrap .topline .h2 .block{
+        display: block;
     }
 }

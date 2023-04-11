@@ -1,0 +1,75 @@
+#human {
+    width: 100%;
+}
+#human h2 {
+        
+}
+#human p {
+    width: calc(100% - 10px * 2);
+}
+#human .grid {
+    grid-template-columns: repeat(2, calc(50% - 50px / 2));
+    column-gap: 50px;
+    border: 0.5px solid #ccc;
+    padding: 0;
+    margin-top: 20px;
+    justify-content: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+#human .grid figure {
+    grid-row: 1 / span 2;
+}
+#human .grid figure img {
+    width: 100%;
+}
+#human .grid .h5 {
+    grid-column: 2 / 3;
+    align-self: end;
+}
+#human .grid ul {
+    margin-left: 25px;
+    align-self: start;
+    margin-top: 10px;
+}
+#human .grid ul li:nth-child(n+1) {
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+  
+#rights {
+}
+#rights .wrap {
+    padding-top: 0;
+    width: 100%;
+}
+#rights .wrap>.h2 {
+        
+}
+#rights .wrap .topline{
+    padding-bottom: 30px;
+    width: 100%;
+}
+#rights .wrap .topline::before {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 2px;
+    background-color: #555;
+    position: absolute;
+}
+#rights .wrap .topline .h2 {
+    min-width: 240px;
+    line-height: 1.2;
+    margin-top: 40px;
+}
+#rights .wrap .topline div {
+    margin: 40px;
+    width: calc(100% - 240px - 10px * 2);
+}
+#rights .wrap .topline div p {
+    line-height: 1.5;
+}
+#rights .wrap .topline div p:nth-child(3) {
+    height: calc(14px * 1.5);
+}
