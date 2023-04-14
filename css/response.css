@@ -20,6 +20,12 @@
         border: none;
         justify-content: center;
     }
+    ul.submenu{
+        justify-content: center;
+    }
+    ul.gnb li:nth-of-type(2) ul.submenu>*{
+      transform: translateX(-70%);
+    }
     ul.etcmenu{
         position: static;
     }
@@ -136,7 +142,8 @@
         transform: translateX(-20px) translateY(10px);
     }
     header nav:hover ul:first-child{
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
         background: white;
         position: absolute;
         right: 0;
