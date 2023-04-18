@@ -14,7 +14,7 @@ div#title{
     position: relative;
     transition: all 0.5s;
   }
-  div#title::before{
+/*   div#title::before{
     content: "";
     display: block;
     width: 0;
@@ -27,9 +27,13 @@ div#title{
     position: absolute;
     left: 0;
     top: 0;
-  }
+  } */
   div#title h2{
     margin-bottom: 11px;
+    animation-name: textup;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
   }
   div#title h2 span{
   }
@@ -52,7 +56,26 @@ div#title{
     position: relative;
     top: -16px;
     transition: all 0.5s;
+    animation-name: textup;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
   }
+@keyframes textup{
+  0%{
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50%{
+    transform: scale(1.2) translateY(calc(-50px / 2));
+  }
+  100%{
+    transform: translateY(-50px);
+    opacity: 1;
+  }
+}
   div#title a{
     background-color: green;
     color: white;
@@ -64,6 +87,12 @@ div#title{
     align-items: center;
     transition: all 1s;
     z-index: 1;
+    animation-name: textup;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
   }
   div#title a:hover{
     background-color: orange;
@@ -106,7 +135,7 @@ div#title{
   div#title a:hover::after{
     border-top-color: orange;
   }
-  div#title::after{
+/*   div#title::after{
     content: "";
     display: block;
     width: 0;
@@ -120,4 +149,4 @@ div#title{
     right: 0;
     bottom: 0;
     opacity: 0.3;
-  }
+  } */

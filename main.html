@@ -18,10 +18,29 @@
     <link rel="stylesheet" href="css/response.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.js"></script>
     <!-- 텍스트로 만들어진 자바스크립트 타입의 제이쿼리 불러오기 -->
-    <script type="text/javascript" src="">
-        $(document).ready(
-		function(){
-            
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("ul.submenu").addClass("submenuani");
+            $("ul.gnb").mouseleave(function(){
+                $(this).find("ul.submenu").removeClass("submenushow");
+                $(this).find("button.close").remove();
+                $("ul.submenu").addClass("submenuani");
+            });
+            $("ul.gnb > li").hover( 
+                function(){
+                    if($("ul.submenu").hasClass("submenushow")){
+                        $("ul.submenu").removeClass("submenuani");
+                    }
+                    $(this).find("ul.submenu").addClass("submenushow");
+                    $("ul.submenu").append("<button class='close'>닫기</button>");
+                    $(this).siblings().find("ul.submenu").removeClass("submenushow");
+                    $("button.close").click(
+                        function(){
+                            $(".submenu").removeClass("submenuani submenushow");
+                        }
+                    ); 
+                }
+            );
 		});
     </script>
 </head>
