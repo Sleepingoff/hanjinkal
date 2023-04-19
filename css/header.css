@@ -102,6 +102,21 @@ ul.submenu>li:nth-child(5){
 .submenushow{
   display: flex !important;
 }
+.submenuUp{
+  animation-name: up;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes up{
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
 ul.gnb li:nth-of-type(2) ul.submenu{
   justify-content: center;
 }
