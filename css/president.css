@@ -1,0 +1,90 @@
+main {
+}
+#president {
+}
+#president .wrap {
+}
+#president .wrap ul.nav {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  column-gap: 40px;
+}
+#president .wrap ul.nav li {
+}
+#president .wrap ul.nav li a {
+}
+#president .wrap ul.nav li a span {
+  background-color: black;
+  height: 2px;
+  width: 300px;
+  margin: 10px 0;
+}
+#president .wrap ul.nav li a span.blueblock{
+  background-color: blue;
+}
+#president .wrap div.flex {
+  justify-content: space-between;
+  align-items: start;
+  column-gap: 10px;
+  margin-bottom: 30px;
+}
+#president .wrap div.flex > figure{
+  height: 100%;
+  width: calc(60% - 80px);
+}
+ul.gallery {
+  width: 10%;
+  height: 100%;
+}
+ul.gallery li:not(:last-child) {
+  margin-bottom: 5px;
+  height: calc(100% / 5);
+}
+ul.gallery li figure{
+  height: 100%;
+}
+ul.gallery figure img{
+  height: 100%;
+}
+.blueborder{
+  border: 2px solid blue;
+}
+#president .wrap div.flex div {
+  margin-left: 60px;
+  line-height: 1.3;
+  width: 30%;
+}
+#president .wrap div.flex div h2.h2 {
+  margin-bottom: 30px;
+  line-height: 1;
+}
+#president .wrap div.flex div h2.h2 span{
+  margin: 0 5px;
+}
+#president .wrap div.flex div p.p{
+  margin-bottom: 30px;
+}
+ul.career {
+  border: 1px solid black;
+  justify-content: left;
+  width: calc(60% - 80px);
+}
+ul.career li {
+  width: calc(100% / 3);
+  text-align: center;
+}
+ul.year {
+  flex-direction: column;
+}
+ul.year li {
+}
+ul.year li ol {
+}
+ul.year li ol li {
+  border-bottom: 1px solid #ccc;
+  line-height: 4;
+}
+ul.year li ol li span {
+  margin: 0 20px;
+}/*# sourceMappingURL=president.css.map */

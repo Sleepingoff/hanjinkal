@@ -104,3 +104,23 @@ img{
 .opacity30{
   opacity: 0.3;
 }
+
+.clickCurrent{
+  background-color: #eee;
+  border: 1px solid #bbb;
+}
+.clickCurrentNotfirstchild{
+  border-left: 1px solid #bbb;
+}
+.clickCurrentInnerA{
+  display: block;
+  text-align: center;
+  line-height: 3;
+}
+.current{
+  background-color: white;
+  border: 1px solid blue;
+  border-bottom-color: white;
+  border-top-width: 2px;
+  transform: scale(1.02);
+}

@@ -108,13 +108,16 @@ ul.submenu>li:nth-child(5){
   animation-fill-mode: forwards;
 }
 @keyframes up{
-  from {
+  0% {
     transform: translateY(0);
     opacity: 1;
   }
-  to {
-    transform: translateY(-100%);
-    opacity: 0;
+  99% {
+    transform: translateY(-50%) scale(1);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(-50%) scale(0);
   }
 }
 ul.gnb li:nth-of-type(2) ul.submenu{
