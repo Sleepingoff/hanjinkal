@@ -1,0 +1,123 @@
+:root{
+    --length20: 20px;
+    --length10: 10px;
+}
+#art .wrap ul.nav {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  column-gap: 40px;
+}
+#art .wrap ul.nav li a span {
+  background-color: black;
+  height: 2px;
+  width: 300px;
+  margin: 10px 0;
+}
+#art .wrap ul.nav li a span.blueblock {
+  background-color: blue;
+}
+div.subnavwrap{
+    border: 1px solid #ccc;
+    overflow: scroll;
+    /* 넘치는 내용물은 클릭 이벤트로 처리하기 */
+    height: 100px;
+    margin-bottom: 30px;
+}
+div.subnavwrap button{
+    background-color: transparent;
+    border: 2px solid #ccc;
+    padding: 10px;
+    position: relative;
+    z-index: 10;
+}
+div.subnavwrap button.next{
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    align-self: center;
+    transform: translateX(-10px) rotate(135deg);
+}
+div.subnavwrap button.prev{
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    align-self: center;
+    transform: translateX(10px) rotate(-45deg);
+}
+div.wsubnav{
+    width: calc(1100px - 30px * 2);
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+ul.subnav {
+    justify-content: space-around;
+    align-items: start;
+    /* align-items의 값에 따라 before와 after의 값을 별도로 조정해야함 */
+    margin-top: 35px;
+    border-top: 2px solid #ccc;
+    position: absolute;
+}
+ul.subnav li{
+    width: 200px;
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+}
+ul.subnav li::before{
+    content: "";
+    width: var(--length10);
+    height: var(--length10);
+    border-radius: 50%;
+    background-color: #ccc;
+    position: absolute;
+    top: -5px;
+}
+#art .wrap>div.imglist{
+    flex-wrap: wrap;
+    gap: 20px;
+    line-height: 1.2;
+    margin: 30px 0;
+    position: relative;
+}
+#art .wrap > div.imglist div{
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#art .wrap>div.imglist>*{
+    width: calc(100% / 4 - 20px * 3 / 4);
+}
+div.imglist div img{
+    width:var(--length20);
+    position: absolute;
+    top: 10px;
+    right: 80px;
+}
+#art .wrap div p.bold::after{
+    content:"";
+    border: 1px solid #ccc;
+    display: block;
+    width: var(--length10);
+    margin: 10px 0;
+}
+#art .wrap div.imglist div.hide{
+    position: absolute;
+    top: 0; left: 0;
+    background-color: white;
+    padding: 50px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+}
+.bluecircle{
+    border-radius: 50%;
+    border: 5px solid #ccc;
+    background-color: #00a0c6;
+    position: absolute;
+    width: var(--length10);
+    height: var(--length10);
+    top: -10px;
+    right: calc(50% - 15px);
+}
