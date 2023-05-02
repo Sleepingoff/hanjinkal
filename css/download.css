@@ -1,0 +1,103 @@
+.download{
+  
+}
+.download .wrap{
+  
+  padding-top: 50px;
+}
+.download ul.nav{
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+.download ul.nav li{
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  width: 100%;
+  position: relative;
+}
+.download ul.nav li::before{
+  content: "01";
+  position: absolute;
+  top: -40px;
+}
+.download ul.nav li:nth-child(2)::before{
+  content: "02";
+}
+.download ul.nav li:nth-child(3)::before{
+  content: "03";
+}
+.download ul.nav li a{
+  
+}
+.download h2.hide{
+  
+}
+
+ul.downloadlist{
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+ul.downloadlist li{
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% / 5 - 60px * 4 / 5);
+  margin-right: 60px;
+  margin-top: 30px;
+}
+ul.downloadlist li:nth-child(5n+5){
+  margin-right: 0;
+}
+ul.downloadlist li h3{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+  border-top: none;
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  line-height: 1.5;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  position: relative;
+}
+ul.downloadlist li h3::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 1px;
+  height: 70px;
+  background-color: #ccc;
+}
+ul.downloadlist li figure{
+  width: 100%;
+}
+ul.downloadlist li button{
+/*   border: 1px solid blue;
+  background-color: transparent;
+  padding: 10px;
+  box-sizing: border-box;*/
+  margin-top: 10px; 
+  background-image: url(https://www.hanjinkal.co.kr/common/images/btn/lifedown_btn.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  font-size: 0;
+  display: block;
+  width: 60%;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+}
+
+.popupImg{
+  position: fixed;
+  top: calc(50% - 200px);
+  left: calc(50% - 200px);
+  
+  width: 30%;
+  z-index: 10;
+}

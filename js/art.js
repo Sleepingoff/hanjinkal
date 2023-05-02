@@ -81,4 +81,17 @@ $(document).ready(function(){
             $("p.show").addClass("h2");
         }
     );
+    let cloneImg;
+    //이미지 클릭 시 해당이미지와 캡션이 화면에 확대되어 보여지는 이벤트
+    $(".imglist figure img").click(function(){
+        //이전 이미지를 먼저 지우기
+        $(cloneImg).remove();
+        let currentImg = $(this).parent();
+        cloneImg = $(currentImg).clone().prependTo("div.imglist").addClass("figwrap");
+        $(cloneImg).children("figcaption").addClass("popuptext");
+        //확대한 이미지 클릭하면 지우기
+        $(cloneImg).click(function(){
+            $(cloneImg).remove();
+        });
+    });
 });

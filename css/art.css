@@ -122,3 +122,20 @@ div.imglist div img{
     top: -10px;
     right: calc(50% - 15px);
 }
+#art .wrap>div.imglist>.figwrap{
+    /* display: flex; */
+    position: fixed;
+    top: calc(50% - 250px);
+    left: calc(50% - 250px);
+    width: 500px;
+    height: auto;
+    z-index: 10;
+    background-color: white;
+}
+.popup{
+    width: 100%;
+}
+.popuptext{
+    display: block;
+    line-height: 1.8;
+}
