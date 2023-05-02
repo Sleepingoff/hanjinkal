@@ -112,6 +112,23 @@ div.imglist div img{
     line-height: 1.5;
     border: 1px solid #ccc;
 }
+div.hide button{
+    position:absolute;
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+    bottom: 10px;
+    border: 1px solid blue;
+}
+.showAll{
+    right: calc(10px + 100px + 10px);
+    background: blue;
+    color: white;
+}
+.close{
+    right: 10px;
+    background: transparent;
+}
 .bluecircle{
     border-radius: 50%;
     border: 5px solid #ccc;

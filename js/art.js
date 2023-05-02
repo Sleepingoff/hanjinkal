@@ -74,11 +74,21 @@ $(document).ready(function(){
         //-
     });
     //ul.subnav 내부 li 클릭시 새로고침되지 않고 색깔 바꾸기
-   
+    $("div.hide").append("<button class='showAll'><a>전문보기</a></button>");
+    $("div.hide").append("<button class='close'>닫기</button>");
     $("img.more").click(
         function(){
             $(this).parent().siblings("div.hide").fadeIn();
             $("p.show").addClass("h2");
+            $("div.hide button.close").click(function(){
+                $("div.hide").fadeOut();
+                $(this).remove();
+            });
+            $("div.hide button.showAll").click(function(){
+                $(this).children().attr("href", "art_1.html");
+                $(this).children().attr( "target", "_blank");
+               
+            });
         }
     );
     let cloneImg;
