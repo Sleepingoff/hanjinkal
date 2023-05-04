@@ -76,21 +76,14 @@ ul.downloadlist li figure{
   width: 100%;
 }
 ul.downloadlist li button{
-/*   border: 1px solid blue;
+  border: 1px solid blue;
   background-color: transparent;
   padding: 10px;
-  box-sizing: border-box;*/
+  box-sizing: border-box;
   margin-top: 10px; 
-  background-image: url(https://www.hanjinkal.co.kr/common/images/btn/lifedown_btn.gif);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  font-size: 0;
   display: block;
-  width: 60%;
+  width: 80%;
   height: 30px;
-  border: none;
-  background-color: transparent;
 }
 
 .popupImg{

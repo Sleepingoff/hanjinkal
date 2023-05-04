@@ -34,7 +34,62 @@ div#title{
     animation-duration: 2s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
+    text-align: center;
   }
+#title div.wlist{
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+#title div.wlist button.slick-prev{
+  border: none;
+  border-radius: 50%;
+  background: white;
+  height: 20px;
+  width: 20px;
+  display: block;
+  color: white;
+  border: 1px solid white;
+  background-color: transparent;
+}
+#title div.wlist button.slick-next{
+  border: none;
+  border-radius: 50%;
+  background: white;
+  height: 20px;
+  width: 20px;
+  display: block;
+  color: white;
+  border: 1px solid white;
+  background-color: transparent;
+}
+#title .slick-dots{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#title .slick-dots button{
+  background-color: #ccc;
+  border: none;
+  border-radius: 50%;
+  color: transparent;
+  width: 10px;
+  height: 10px;
+  transform: translateY(-100px);
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
   div#title h2 span{
   }
   div#title span{
@@ -69,10 +124,10 @@ div#title{
     opacity: 0;
   }
   50%{
-    transform: scale(1.2) translateY(calc(-50px / 2));
+    transform: scale(1.2) translateY(calc(50% / 2));
   }
   100%{
-    transform: translateY(-50px);
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -87,6 +142,7 @@ div#title{
     align-items: center;
     transition: all 1s;
     z-index: 1;
+    top: -50px;
     animation-name: textup;
     animation-duration: 2s;
     animation-timing-function: ease-in;

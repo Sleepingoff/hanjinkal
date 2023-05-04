@@ -21,6 +21,11 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.js"></script>
     <script type="text/javascript" src="js/submenu.js"></script>
     <script type="text/javascript" src="js/download.js"></script>
+    <script>
+        function downloadPdf(n){
+            window.open('pdf/사업은+예술이다_'+n+'장.pdf','_blank');
+        }
+    </script>
 </head>
 <body>
     <span class="wbutton"></span>
@@ -211,53 +216,54 @@
                     <li class="bordertop flex">
                         <h3 class="bold">표지 및 목차</h3>
                         <figure><img src="img/life_img1.jpg" alt=""></figure>
-                        <button>다운로드</button>
+                        <button onclick="downloadPdf(0)">다운로드</button>
                     </li>
                     <li class="bordertop flex">
                         <h3 class="bold">1장 파도마저 삼킨
                             오디세이</h3>
                         <figure><img src="img/life_img2.jpg" alt=""></figure>
-                        <button>다운로드</button>
+                        <!-- <a href="pdf/사업은+예술이다_1장.pdf" target="_blank">다운로드</a> -->
+                        <button onclick="downloadPdf(1)">다운로드</button>
                     </li>
                     <li class="bordertop flex">
                         <h3 class="bold">2장 퀴논의 전설</h3>
                         <figure><img src="img/life_img3.jpg" alt=""></figure>
-                        <button>다운로드</button>
+                        <button onclick="downloadPdf(2)">다운로드</button>
                     </li>
                     <li class="bordertop flex">
                         <h3 class="bold">3장 대한항공 인수</h3>
                         <figure><img src="img/life_img4.jpg" alt=""></figure>
-                        <button>다운로드</button>
+                        <button onclick="downloadPdf(3)">다운로드</button>
                     </li>
                     <li class="bordertop flex">
                         <h3 class="bold">4장 대한의 날개에서<span class="block"></span>세계의 날개로</h3>
                         <figure><img src="img/life_img5.jpg" alt=""></figure>
-                        <button>다운로드</button>
+                        <button onclick="downloadPdf(4)">다운로드</button>
                     </li>
                     <li class="bordertop flex">
                         <h3 class="bold">5장 해운왕<span class="block"></span>꿈을 이루다</h3>
                         <figure><img src="img/life_img6.jpg" alt=""></figure>
-                        <button>다운로드</button>
+                        <button onclick="downloadPdf(5)">다운로드</button>
                     </li>
                     <li class="bordertop flex">
                         <h3 class="bold">6장 수송외길을<span class="block"></span>위한 변주곡</h3>
                         <figure><img src="img/life_img7.jpg" alt=""></figure>
-                        <button>다운로드</button>
+                        <button onclick="downloadPdf(6)">다운로드</button>
                     </li>
                     <li class="bordertop flex">
                         <h3 class="bold">7장 열정의 민간<span class="block"></span>외교가</h3>
                         <figure><img src="img/life_img8.jpg" alt=""></figure>
-                        <button>다운로드</button>
+                        <button onclick="downloadPdf(7)">다운로드</button>
                     </li>
                     <li class="bordertop flex">
                         <h3 class="bold">8장 인재의 숲을<span class="block"></span>가꾼 정원사</h3>
                         <figure><img src="img/life_img9.jpg" alt=""></figure>
-                        <button>다운로드</button>
+                        <button onclick="downloadPdf(8)">다운로드</button>
                     </li>
                     <li class="bordertop flex">
                         <h3 class="bold">9장 인생과<span class="block"></span>사업의 예술가</h3>
                         <figure><img src="img/life_img10.jpg" alt=""></figure>
-                        <button>다운로드</button>
+                        <button onclick="downloadPdf(9)">다운로드</button>
                     </li>
                 </ul>
             </div>
