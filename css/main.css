@@ -193,6 +193,10 @@ main section#intro div ul li a:hover::after{
 }
 #society .wrap article {
   
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 #society .wrap article a {
   border: 3px solid transparent;

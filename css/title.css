@@ -75,12 +75,14 @@ div#title{
   gap: 10px;
 }
 #title .slick-dots button{
-  background-color: #ccc;
+  background-color: white;
   border: none;
   border-radius: 50%;
   color: transparent;
   width: 10px;
   height: 10px;
+}
+#title .slick-dots li{
   transform: translateY(-100px);
 }
 .list{
